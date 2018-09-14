@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <nav id="navbar">
+  <header id="title">Python Documentation</header>
+  <ul>
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#Built-in_Functions" rel="internal"><li>Built-in Functions</li></a>
+    <a class="nav-link" href="#Built-in_Constants" rel="internal"><li>Built-in Constants</li></a>
+    <a class="nav-link" href="#Built-in_Types" rel="internal"><li>Built-in Types</li></a>
+    <a class="nav-link" href="#Built-in_Exceptions" rel="internal"><li>Built-in Exceptions</li></a>
+    <a class="nav-link" href="#Data_Types" rel="internal"><li>Data Types</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section"  id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.</p>
+      <p>Some of Python's notable features:</p>
+      <li>Uses an elegant syntax, making the programs you write easier to read.</li>
+      <li>Is an easy-to-use language that makes it simple to get your program working. This makes Python ideal for prototype development and other ad-hoc programming tasks, without compromising maintainability.</li>
+      <li>Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, reading and modifying files.</li>
+      <li>Python's interactive mode makes it easy to test short snippets of code. There's also a bundled development environment called IDLE.</li>
+      <li>Is easily extended by adding new modules implemented in a compiled language such as C or C++.</li>
+      <li>Can also be embedded into an application to provide a programmable interface.</li>
+      <li>Runs anywhere, including Mac OS X, Windows, Linux, and Unix, with unofficial builds also available for Android and iOS.</li>
+      <li>Is free software in two senses. It doesn't cost anything to download or use Python, or to include it in your application. Python can also be freely modified and re-distributed, because while the language is copyrighted it's available under an open source license.</li>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Built-in_Functions">
+    <header>Built-in Functions </header>
+    <article>
+      <p>The Python interpreter has a number of functions and types built into it that are always available.</p>
+      <p>abs()	all()	any()	ascii()	bin()	bool()	breakpoint()	delattr()	hash()	memoryview()	set()
+dict()	help()	min()	setattr()
+dir()	hex()	next()	slice()
+divmod()	id()	object()	sorted()
+enumerate()	input()	oct()	staticmethod()
+eval()	int()	open()	str()
+exec()	isinstance()	ord()	sum()
+bytearray()	filter()	issubclass()	pow()	super()
+bytes()	float()	iter()	print()	tuple()
+callable()	format()	len()	property()	type()
+chr()	frozenset()	list()	range()	vars()
+classmethod()	getattr()	locals()	repr()	zip()
+compile()	globals()	map()	reversed()	__import__()
+complex()	hasattr()	max()	round()	</p>
+    </article>
+  </section>
+  
+  <section class="main-section"  id="Built-in_Constants">
+    <header>Built-in Constants</header>
+    <article>
+      <p>A small number of constants live in the built-in namespace. They are:</p>
+      <li>False</li>
+      <li>True</li>
+      <li>None</li>
+      <li>NotImplemented</li>
+      <li>Ellipsis</li>
+      <li>_debug_</li>
+    </article>
+  </section>
+  
+  <section class="main-section"  id="Built-in_Types">
+    <header>Built-in Types</header>
+    <article>
+      <p>The principal built-in types are numerics, sequences, mappings, classes, instances and exceptions.</p>
+      <p>Some collection classes are mutable. The methods that add, subtract, or rearrange their members in place, and don’t return a specific item, never return the collection instance itself but None.</p>
+      <p>Some operations are supported by several object types; in particular, practically all objects can be compared, tested for truth value, and converted to a string (with the repr() function or the slightly different str() function). The latter function is implicitly used when an object is written by the print() function.</p>
+    </article>
+  </section>
+  
+  <section class="main-section"  id="Built-in_Exceptions">
+    <header>Built-in Exceptions</header>
+    <article>
+      <p>In Python, all exceptions must be instances of a class that derives from BaseException. In a try statement with an except clause that mentions a particular class, that clause also handles any exception classes derived from that class (but not exception classes from which it is derived). Two exception classes that are not related via subclassing are never equivalent, even if they have the same name.</p>
+      <p>The built-in exceptions listed below can be generated by the interpreter or built-in functions. Except where mentioned, they have an “associated value” indicating the detailed cause of the error. This may be a string or a tuple of several items of information (e.g., an error code and a string explaining the code). The associated value is usually passed as arguments to the exception class’s constructor.</p>
+      <p>User code can raise built-in exceptions. This can be used to test an exception handler or to report an error condition “just like” the situation in which the interpreter raises the same exception; but beware that there is nothing to prevent user code from raising an inappropriate error.</p>
+      <p>When raising a new exception (rather than using a bare raise to re-raise the exception currently being handled), the implicit exception context can be supplemented with an explicit cause by using from with raise:</p>
+      <code>raise new_exc from original_exc</code>
+      
+    </article>
+  </section>
+  
+  <section class="main-section"  id="Data_Types">
+    <header>Data Types</header>
+    <article>
+      <p>Python has five standard Data Types:</p>
+      <li>Numbers</li>
+      <li>String</li>
+      <li>List</li>
+      <li>Tuple</li>
+      <li>Dictionary</li>
+      <p>Python sets the variable type based on the value that is assigned to it. Unlike more riggers languages, Python will change the variable type if the variable value is set to another value.</p>
+      <p>For example:</p>
+      <code>var = 123 # This will create a number integer assignment</code>
+      <code>var = 'john' # the `var` variable is now a string type.</code>
+      <p>Most of the time Python will do variable conversion automatically. You can also use Python conversion functions (int(), long(), float(), complex()) to convert data from one type to another. In addition, the <code id="type">type</code>function returns information about how your data is stored within a variable.</p>
+      <code>message = "Good morning"
+num = 85
+pi = 3.14159
+
+print(type(message))  # This will return a string
+print(type(n))  # This will return an integer
+print(type(pi))  # This will return a float</code>
+    </article>
+  </section>
+  
+  <section class="main-section"  id="Reference">
+    <header>Reference</header>
+    <article>
+      <p>All the documentation in this page is taken from:</p>
+      <li><a href="https://docs.python.org/3/library/index.html" target="_blank">Python.org</a></li>
+      <li><a href="https://developer.rhino3d.com/guides/rhinopython/python-datatypes/" target="_blank">Rhino Developer Docs</a></li>
+    </article>
+  </section>
+</main>
+  
+  
+
+</body>
+
+</html>
